@@ -1,0 +1,15 @@
+{
+  "name": "Snake Game",
+  "description": "Classic Snake Game for KaiOS",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/icon.png"
+  },
+  "developer": {
+    "name": "ChocoRoku",
+    "url": "https://example.com"
+  },
+  "default_locale": "en",
+  "type": "web",
+  "permissions": []
+}
