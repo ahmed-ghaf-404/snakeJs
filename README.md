@@ -1,0 +1,80 @@
+# Snake Game for KaiOS
+
+A simple classic Snake game implemented using HTML, CSS, and JavaScript, designed specifically for KaiOS devices such as the Nokia 2780.
+
+---
+
+## Features
+
+- Lightweight and optimized for KaiOS environment  
+- Uses standard web technologies (HTML5, CSS3, JavaScript) compatible with KaiOS browsers  
+- Responsive canvas for different screen sizes on KaiOS devices  
+- Supports key navigation using physical keypad (Arrow keys and Soft keys)  
+- Wrap-around snake movement  
+- Pixelated 8-bit style graphics for retro look  
+- Simple and intuitive controls
+
+---
+
+## How to Run
+
+### Locally on KaiOS Simulator
+
+1. Clone or download the repository.  
+2. Open the KaiOS Simulator.  
+3. Load the project folder as a temporary add-on in the simulator.  
+4. Use arrow keys or soft keys on the simulator to play.
+
+### On a Real Device
+
+1. Package the app following KaiOS packaging guidelines:  
+   - Include a valid `manifest.webmanifest` with correct permissions and icons.  
+2. Install the app on your KaiOS device via USB or OTA.  
+3. Launch and enjoy!
+
+---
+
+## File Structure
+```
+/index.html - Main HTML file
+/styles.css - Stylesheet for game UI
+/snake.js - Game logic and rendering
+/manifest.webmanifest - KaiOS app manifest file
+README.md - This documentation
+```
+
+---
+
+## Controls
+
+| Key            | Action              |
+|----------------|---------------------|
+| Arrow Up       | Move snake up       |
+| Arrow Down     | Move snake down     |
+| Arrow Left     | Move snake left     |
+| Arrow Right    | Move snake right    |
+| Soft Left      | Optional menu or up |
+| Soft Right     | Optional menu or down|
+
+---
+
+## Manifest Highlights
+
+Make sure your `manifest.webmanifest` includes:
+
+```json
+{
+  "name": "Snake Game",
+  "description": "Classic Snake game for KaiOS devices",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "type": "web",
+  "permissions": [],
+  "categories": ["games"]
+}
