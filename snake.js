@@ -5,8 +5,6 @@ canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d")
 
-ctx.imageSmoothingEnabled = false;
-
 const tileSize = 20
 
 const tileCountX = canvas.width / tileSize;
@@ -61,8 +59,7 @@ function drawGame() {
     for (let i = 0; i < length; i++) {
         const segment = snake[i];
         
-        // Interpolated scale factor (head = maxScale, tail = minScale)
-        const t = i / (length - 1 || 1);  // Avoid divide-by-zero
+        const t = i / (length - 1 || 1);  // Avoids divide-by-zero
         const scale = maxScale - (maxScale - minScale) * t;
 
         const size = tileSize * scale;

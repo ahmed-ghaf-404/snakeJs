@@ -12,8 +12,4 @@ canvas {
   background: #111;
   display: block;
   box-shadow: 0 0 8px #222;
-
-  image-rendering: pixelated;
-  /* fallback for other browsers
-  image-rendering: crisp-edges; */
 }
